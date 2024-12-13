@@ -56,6 +56,8 @@
 .\objects\main.o: ..\6.HAL_Driver\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_pcd_ex.h
 .\objects\main.o: ..\6.HAL_Driver\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_hcd.h
 .\objects\main.o: ..\6.HAL_Driver\STM32F1xx_HAL_Driver\Inc\stm32f1xx_hal_mmc.h
+.\objects\main.o: ..\5.Peripherals\drv_gpio.h
+.\objects\main.o: ..\5.Peripherals\drv_adc.h
 .\objects\main.o: ..\3.Middlewares\FreeRTOS\include\FreeRTOS.h
 .\objects\main.o: ..\3.Middlewares\FreeRTOS\FreeRTOSConfig.h
 .\objects\main.o: ..\3.Middlewares\FreeRTOS\include\projdefs.h

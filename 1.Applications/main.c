@@ -1,4 +1,6 @@
 #include "main.h"
+#include "drv_gpio.h"
+#include "drv_adc.h"
 
 #include "FreeRTOS.h"
 #include "task.h"
@@ -7,11 +9,10 @@ void SystemClock_Config(void);
 
 void test(void *param)
 {
-	static unsigned int i = 0; 
 	while(1)
 	{
-		i++;
-		vTaskDelay(1);
+		float voltage = Power_input_get();
+		vTaskDelay(1000);
 	}
 }
 
@@ -19,6 +20,8 @@ int main(void)
 {
 	HAL_Init();
 	void SystemClock_Config(void);
+	
+	Power_input_adc_init();
 	
 	xTaskCreate(test, "test", 128, NULL, 1, NULL);
 	

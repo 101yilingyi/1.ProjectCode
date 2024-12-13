@@ -456,6 +456,16 @@
               <FileType>1</FileType>
               <FilePath>..\5.Peripherals\stm32f1xx_hal_timebase_tim.c</FilePath>
             </File>
+            <File>
+              <FileName>drv_gpio.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\5.Peripherals\drv_gpio.c</FilePath>
+            </File>
+            <File>
+              <FileName>drv_adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\5.Peripherals\drv_adc.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
